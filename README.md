@@ -22,16 +22,22 @@ It recognises which live system the image contains and sets the storage area up 
 | Family | Covers |
 |---|---|
 | Ubuntu (casper) | Ubuntu, Xubuntu, Kubuntu, Lubuntu, **Linux Mint**, Zorin, elementary |
-| Debian Live | Debian and relatives |
+| Debian Live | Debian, Devuan and relatives |
 | Arch (archiso) | Arch Linux, EndeavourOS, CachyOS |
-| Manjaro (miso) | Manjaro |
-| Fedora / dracut | Fedora, **Void Linux**, Solus |
-| openSUSE (kiwi) | openSUSE Leap and Tumbleweed |
+| Manjaro (miso) | Manjaro, BigLinux |
+| Fedora / dracut | Fedora, Solus, **Void Linux** |
+| openSUSE (kiwi) | openSUSE Tumbleweed and Leap 15.6 |
 | Mageia | Mageia |
+| PikaOS (booster) | PikaOS |
 
 Two ways of writing, chosen automatically: **file by file** (then a storage area is
 possible) or a **1:1 copy** for images that bring their own boot record — FreeBSD, for
 example.
+
+⚠️ **Take the live ISO.** Debian, Devuan, Fedora, openSUSE and Mageia also offer installer
+images (often named “netinst”, “install” or “DVD”) — with those the stick only becomes an
+installer stick and no storage area is possible. The exact files that were tested are
+listed on https://livestick.rikus.info under “Tested systems”.
 
 Further settings for those who want them: partition table, target (BIOS/UEFI), file
 system (FAT32, NTFS, exFAT, UDF, ext4), cluster size, quick or thorough formatting,
@@ -65,13 +71,16 @@ straight away and is valid for all free Rikus programs.
 
 ## Current version
 
-**1.3 beta** (20 September 2026) — the storage area is fast again, Ubuntu-family sticks
-are set up the way those systems expect, and the stick is properly finished and read
-back after writing.
+**1.3** (25 September 2026) — the finished release after the beta. With most systems the
+storage area now works through memory: your changes are written to the stick when you shut
+down or restart, which makes starting faster and is gentle on the stick — so always shut
+down from the menu. The systems keep their own boot menu. Sticks with Linux Mint and
+Xubuntu start on the Microsoft Surface Go 2 again; the warning from the beta no longer
+applies. “Format only” offers up to eleven file systems.
 
-⚠️ **Microsoft Surface Go 2:** sticks with Ubuntu, Xubuntu or Linux Mint written by
-version 1.3 will not boot on that device. Sticks with Debian, Fedora, Arch, Manjaro,
-openSUSE or Mageia are unaffected. If you own a Surface Go 2, please stay on 1.2.
+Tested on real computers with Linux Mint, Xubuntu, Debian, Devuan, Fedora, openSUSE
+Tumbleweed and Leap 15.6, Mageia, Void Linux, Solus, Manjaro, EndeavourOS, CachyOS,
+BigLinux and PikaOS. Ubuntu itself has not been tested yet.
 
 All changes, in German and English: https://livestick.rikus.info/aenderungen
 

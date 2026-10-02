@@ -71,12 +71,16 @@ straight away and is valid for all free Rikus programs.
 
 ## Current version
 
-**1.4** (2 October 2026) — Rescuezilla and other ISO files that carry the start for older
-computers only inside the image are now written as a 1:1 copy, so they start on old and new
-computers; Rescuezilla is recognised and gets no storage area. MX Linux and antiX keep their
-changes (the stick is formatted with ext4 for them). After “Format only” you can choose an ISO
-file and write straight away. exFAT is always available when formatting. An ISO file that has
-not finished downloading is recognised before the drive is erased.
+**1.3** (25 September 2026) — the finished release after the beta. With most systems the
+storage area now works through memory: your changes are written to the stick when you shut
+down or restart, which makes starting faster and is gentle on the stick — so always shut
+down from the menu. The systems keep their own boot menu. Sticks with Linux Mint and
+Xubuntu start on the Microsoft Surface Go 2 again; the warning from the beta no longer
+applies. “Format only” offers up to eleven file systems.
+
+Tested on real computers with Linux Mint, Xubuntu, Debian, Devuan, Fedora, openSUSE
+Tumbleweed and Leap 15.6, Mageia, Void Linux, Solus, Manjaro, EndeavourOS, CachyOS,
+BigLinux and PikaOS. Ubuntu itself has not been tested yet.
 
 All changes, in German and English: https://livestick.rikus.info/aenderungen
 

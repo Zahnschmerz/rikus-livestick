@@ -71,6 +71,8 @@ straight away and is valid for all free Rikus programs.
 
 ## Current version
 
+**1.5** (2 October 2026) — for Rescuezilla the window now correctly says “1:1 copy”.
+
 **1.4** (2 October 2026) — Rescuezilla and other ISO files that carry the start for older
 computers only inside the image are now written as a 1:1 copy, so they start on old and new
 computers; Rescuezilla is recognised and gets no storage area. MX Linux and antiX keep their
